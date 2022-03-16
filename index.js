@@ -18,7 +18,12 @@ function Header() {
     return (
         <header>
             <nav>
-                <img src="./react-logo.png" width="40px" />
+                <img src="./react-logo.png" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
@@ -27,7 +32,7 @@ function Header() {
 function MainContent() {
     return (
         <div>
-            <h1>Reasons 1'm excited to learn React</h1>
+            <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>Money</li>
                 <li>Projects</li>
