@@ -14,41 +14,12 @@
 
 // ReactDOM.render(page, document.getElementById("root"))
 
-function Header() {
-    return (
-        <header>
-            <nav>
-                <img src="./react-logo.png" className="nav-logo" />
-                <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+import Header from "./Header"
+import MainContent from "./MainContent"
+import Footer from "./Footer"
 
-function MainContent() {
-    return (
-        <div>
-            <h1>Reasons I'm excited to learn React</h1>
-            <ol>
-                <li>Money</li>
-                <li>Projects</li>
-                <li>Versatility</li>
-            </ol>
-        </div>
-    )
-}
 
-function Footer() {
-    return (
-        <footer>© 2022 Douglas development. All rights reserved.</footer>
-    )
-}
-
-function Page() {
+function App() {
     return (
         <div>
             <Header />
@@ -58,4 +29,4 @@ function Page() {
     )
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
