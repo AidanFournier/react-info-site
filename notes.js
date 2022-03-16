@@ -79,3 +79,18 @@
 //     nav,
 //     document.getElementById("root")
 // )
+
+// 5. Custom Components chaallenge:
+// function Page() {
+//     return (
+//         <div>
+//             <ol>
+//                 <li>Money</li>
+//                 <li>Projects</li>
+//                 <li>Versatility</li>
+//             </ol>
+//         </div>
+//     )
+// }
+
+// ReactDOM.render(<Page />, document.getElementById("root"));
