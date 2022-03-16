@@ -14,21 +14,41 @@
 
 // ReactDOM.render(page, document.getElementById("root"))
 
-function Page() {
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+function MainContent() {
     return (
         <div>
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
-            <hi>Reasons I'm excited to learn React</hi>
+            <h1>Reasons 1'm excited to learn React</h1>
             <ol>
                 <li>Money</li>
                 <li>Projects</li>
                 <li>Versatility</li>
             </ol>
-            <footer>© 2022 Douglas development. All rights reserved.</footer>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>© 2022 Douglas development. All rights reserved.</footer>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }

@@ -24,3 +24,39 @@ We need our JSX to be nested under a single parent element
 5. What does it mean for something to be "composable"?
    We have small pieces that we can put together to make something
    larger/greater than the individual pieces.
+
+<!-- Components quiz -->
+
+1. What is a React component?
+   A Ract component is a smaller bit of reusable code that can be added with other components to create a page.
+   A function that returns React elements. (UI, user interfaces)
+
+2. What's wrong with this code?
+
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+
+The function needs to be named "MyComponent", capital M
+
+3. What's wrong with this code?
+
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(Header(), document.getElementById("root"))
+```
+
+The component should be render like this: <Header />
